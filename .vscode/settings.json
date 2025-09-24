@@ -1,0 +1,13 @@
+{
+  // Accept suggestions with Enter (makes Enter behave consistently)
+  "editor.acceptSuggestionOnEnter": "on",
+
+  // Keep inline (ghost text) suggestions enabled
+  "editor.inlineSuggest.enabled": true,
+
+  // Make Tab complete snippets and suggestions when appropriate
+  "editor.tabCompletion": "on",
+
+  // Prefer the first suggestion when navigating the suggestion list
+  "editor.suggestSelection": "first"
+}

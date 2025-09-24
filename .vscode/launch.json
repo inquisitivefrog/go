@@ -32,11 +32,34 @@
       "buildFlags": ""
     },
     {
+      "name": "Debug will_crash (Delve)",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${workspaceFolder}/w3schools/debug/will_crash",
+      "args": [],
+      "env": {},
+      "buildFlags": "",
+      "console": "internalConsole",
+      "internalConsoleOptions": "neverOpen",
+      "stopOnEntry": false
+    },
+    {
       "name": "Attach to Process",
       "type": "go",
       "request": "attach",
       "mode": "local",
       "processId": "${command:pickProcess}"
+    }
+    ,
+    {
+      "name": "Attach to Headless Delve",
+      "type": "go",
+      "request": "attach",
+      "mode": "remote",
+      "remotePath": "",
+      "port": 2345,
+      "host": "127.0.0.1"
     }
   ]
 }
