@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch current file",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "${fileDirname}",
+      "args": [],
+      "env": {},
+      "buildFlags": ""
+    },
+    {
+      "name": "Launch w3schools/debug package",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "${workspaceFolder}/w3schools/debug",
+      "args": [],
+      "env": {},
+      "buildFlags": ""
+    },
+    {
+      "name": "Launch tests in current package",
+      "type": "go",
+      "request": "launch",
+      "mode": "test",
+      "program": "${fileDirname}",
+      "args": [],
+      "env": {},
+      "buildFlags": ""
+    },
+    {
+      "name": "Attach to Process",
+      "type": "go",
+      "request": "attach",
+      "mode": "local",
+      "processId": "${command:pickProcess}"
+    }
+  ]
+}
