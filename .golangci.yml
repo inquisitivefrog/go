@@ -1,0 +1,19 @@
+linters:
+  enable:
+    - unused
+    - revive
+    - errcheck
+    - govet
+    - staticcheck
+    - goimports
+linters-settings:
+  revive:
+    rules:
+      - name: var-naming
+        severity: warning
+      - name: package-comments
+        severity: warning
+issues:
+  exclude-rules:
+    - linters: [revive]
+      text: "package-comment"
